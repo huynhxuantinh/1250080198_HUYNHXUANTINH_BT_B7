@@ -232,7 +232,7 @@ BEGIN
    WHERE MaNV=p_MaNV;
 
    COMMIT;
-   p_kq:=1; -- cập nhật thành công
+   p_kq:=1;
  END IF;
 
 END;
@@ -244,4 +244,5 @@ BEGIN
  TO_DATE('10/10/1998','DD/MM/YYYY'),v_kq);
  DBMS_OUTPUT.PUT_LINE('Ket qua: '||v_kq);
 END;
+
 /
